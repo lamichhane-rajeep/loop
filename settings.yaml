@@ -1,0 +1,28 @@
+plotter: # All units in mm
+  size:
+    width:  200
+    height: 200
+  origin: # Position of negative-most corner
+    x: 0
+    y: 0
+  pen:
+    plunge: -1
+    lift:    2
+  speed: # mm/s
+    plunge: 150
+    travel: 3500
+    draw:   2000
+  output: "graph.gcode"
+
+graph: # All units in mm
+  origin: #(0,0 = center)
+    x: 0
+    y: 0
+  number: 10
+  scale:
+    amount: 1
+  rotation: #degree
+    amount: 10
+  translate:
+    x: .5
+    y: .5
